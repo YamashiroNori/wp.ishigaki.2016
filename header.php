@@ -14,6 +14,10 @@
   }
   bloginfo('name');
 ?></title>
+<?php
+wp_enqueue_script('jquery');
+wp_enqueue_script('hotel-common', get_template_directory_uri() . '/js/common.js');
+?>
 </head>
 <body <?php body_class(); ?>>
     <header class="globalHeader">
